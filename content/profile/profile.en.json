@@ -1,0 +1,99 @@
+{
+  "name": "Guillermo J. Montenegro",
+  "headline": "Software developer with more than 15 years of experience, focused on applied AI",
+  "summary": "My experience started long before my first job: at age 12 I was already programming in Basic and Pascal, then in C and Assembly. At 20 I developed an operating system kernel based on what I learned from Andrew S. Tanenbaum. Today I work in applied research with LLMs, agents, and AI tools, alongside mobile and web development to take solutions from prototype to production.",
+  "skills": [
+    "Web development",
+    "Software development",
+    "Research and development (R&D)",
+    "Android",
+    "iOS",
+    "Cross-platform",
+    "React",
+    "TypeScript",
+    "Kotlin",
+    "Java",
+    "Swift",
+    "Objective-C",
+    "Python",
+    "Tailwind CSS",
+    "PyTorch",
+    "Ollama",
+    "LM Studio",
+    "MCP Servers",
+    "Docker",
+    "CI/CD"
+  ],
+  "experience": [
+    {
+      "company": "Grid Dynamics",
+      "role": "T3 Full Stack Developer",
+      "period": "Mar 2025 - Mar 2026",
+      "highlights": [
+        "AI Researcher and Senior Software Engineer focused on applied artificial intelligence research.",
+        "Experimentation with LLMs, development of agents and tools, and design of AI-assisted workflows.",
+        "Development of prototypes and solutions exploring model integration, deterministic behavior, and system orchestration."
+      ]
+    },
+    {
+      "company": "Mobile Computing S.A.",
+      "role": "Senior Full Stack Developer",
+      "period": "Jun 2013 - Mar 2025",
+      "highlights": [
+        "More than 10 years of experience in mobile development with Android, iOS, and cross-platform technologies.",
+        "Participation in the design and development of mobile and web applications in corporate and research environments.",
+        "Experience building mobile applications and games with a focus on scalable, product-oriented solutions."
+      ]
+    },
+    {
+      "company": "@rtech S.R.L.",
+      "role": "Senior Developer",
+      "period": "May 2010 - Jun 2013",
+      "highlights": [
+        "Development of enterprise and mobile applications in C#, VB .NET, ASP .NET, Objective-C, Java, and JavaScript.",
+        "Development of games and mobile apps including Rescue me from Asylum, AfterLife Samurai, and DimBot Unit 12.",
+        "Use of XCode, Eclipse, Blender, Gimp, Unity Engine, and Zebra scripting for label printing."
+      ]
+    },
+    {
+      "company": "Bosch Argentina Industrial",
+      "role": "Senior Auditor",
+      "period": "Jun 2001 - Dec 2009",
+      "highlights": [
+        "Internal auditor and senior quality control professional.",
+        "Leadership of a junior auditors team.",
+        "Implementation and control of ISO standards in production processes."
+      ]
+    }
+  ],
+  "projects": [
+    "Applied AI research with LLMs and agents",
+    "AI-assisted development workflows",
+    "Corporate mobile development for Android/iOS",
+    "Full Stack web development",
+    "Prototypes for orchestration and determinism in AI",
+    "Technical content production about AI"
+  ],
+  "education": [
+    {
+      "title": "Electrical Technician with a specialization in Industrial Electronics",
+      "period": "1993 - 1999",
+      "institution": "E.E.T. No. 4 Ing. Emilio Mitre"
+    },
+    {
+      "title": "Systems Engineering (incomplete)",
+      "period": "1999 - 2002",
+      "institution": "National Technological University"
+    }
+  ],
+  "languages": [
+    { "name": "Spanish", "level": "Native or bilingual" },
+    { "name": "English", "level": "Full professional" },
+    { "name": "Japanese", "level": "Professional working" }
+  ],
+  "contact": {
+    "email": "guillermo.j.montenegro@gmail.com",
+    "location": "Buenos Aires and surrounding area",
+    "linkedin": "https://www.linkedin.com/in/guillermo-j-montenegro-7b9a7a35"
+  }
+}

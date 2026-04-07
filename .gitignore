@@ -23,6 +23,7 @@ pnpm-debug.log*
 
 .idea/
 .vscode/
+.codex
 .codex/
 .playwright-mcp/
 

@@ -2,6 +2,8 @@ export type Locale = "es" | "en";
 
 type Dictionary = {
   localeSwitchLabel: string;
+  themeToggleToLight: string;
+  themeToggleToDark: string;
   brandSubtitle: string;
   nav: {
     experience: string;
@@ -105,6 +107,8 @@ type Dictionary = {
 const dictionaries: Record<Locale, Dictionary> = {
   es: {
     localeSwitchLabel: "English",
+    themeToggleToLight: "Cambiar a modo claro",
+    themeToggleToDark: "Cambiar a modo oscuro",
     brandSubtitle: "IA aplicada, software y contenido técnico",
     nav: {
       experience: "Experiencia",
@@ -232,6 +236,8 @@ const dictionaries: Record<Locale, Dictionary> = {
   },
   en: {
     localeSwitchLabel: "Español",
+    themeToggleToLight: "Switch to light mode",
+    themeToggleToDark: "Switch to dark mode",
     brandSubtitle: "Applied AI, software, and technical writing",
     nav: {
       experience: "Experience",

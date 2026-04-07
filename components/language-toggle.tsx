@@ -8,9 +8,14 @@ import type { Locale } from "@/lib/i18n";
 type LanguageToggleProps = {
   locale: Locale;
   label: string;
+  onClick?: () => void;
 };
 
-export function LanguageToggle({ locale, label }: LanguageToggleProps) {
+export function LanguageToggle({
+  locale,
+  label,
+  onClick,
+}: LanguageToggleProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const nextLocale = locale === "es" ? "en" : "es";
@@ -33,6 +38,7 @@ export function LanguageToggle({ locale, label }: LanguageToggleProps) {
       className="language-toggle"
       aria-label={`Cambiar idioma a ${label}`}
       title={`Cambiar idioma a ${label}`}
+      onClick={onClick}
     >
       <span className="language-toggle-flag" aria-hidden="true">
         {currentFlag}

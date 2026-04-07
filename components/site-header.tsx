@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 import { LanguageToggle } from "@/components/language-toggle";
@@ -10,32 +13,75 @@ type SiteHeaderProps = {
 
 export function SiteHeader({ locale }: SiteHeaderProps) {
   const copy = getDictionary(locale);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const toggleLabel =
+    locale === "es" ? "Alternar navegación" : "Toggle navigation";
+  const closeSidebar = () => setIsSidebarOpen(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(orientation: portrait)");
+    const syncSidebarState = (event?: MediaQueryListEvent) => {
+      if (!(event?.matches ?? mediaQuery.matches)) {
+        setIsSidebarOpen(false);
+      }
+    };
+
+    syncSidebarState();
+    mediaQuery.addEventListener("change", syncSidebarState);
+
+    return () => mediaQuery.removeEventListener("change", syncSidebarState);
+  }, []);
 
   return (
-    <header className="site-header">
+    <header
+      className={`site-header ${isSidebarOpen ? "is-portrait-open" : "is-portrait-collapsed"}`}
+    >
+      <button
+        type="button"
+        className="site-header-toggle"
+        aria-label={toggleLabel}
+        aria-expanded={isSidebarOpen}
+        onClick={() => setIsSidebarOpen((current) => !current)}
+      >
+        <span className="site-header-toggle-box" aria-hidden="true">
+          <span className="site-header-toggle-line" />
+          <span className="site-header-toggle-line" />
+          <span className="site-header-toggle-line" />
+        </span>
+      </button>
+
       <div className="container site-header-inner">
-        <Link
-          href={withLocale("/", locale)}
-          className="brand-lockup"
-          aria-label={locale === "es" ? "Inicio" : "Home"}
-        >
-          <span className="brand-mark">GM</span>
-          <span className="brand-copy">
-            <strong>Guillermo J. Montenegro</strong>
-            <span>{copy.brandSubtitle}</span>
-          </span>
-        </Link>
+        <div className="site-header-topbar">
+          <Link
+            href={withLocale("/", locale)}
+            className="brand-lockup"
+            aria-label={locale === "es" ? "Inicio" : "Home"}
+            onClick={closeSidebar}
+          >
+            <span className="brand-mark">GM</span>
+            <span className="brand-copy">
+              <strong>Guillermo J. Montenegro</strong>
+              <span>{copy.brandSubtitle}</span>
+            </span>
+          </Link>
+        </div>
 
         <div className="site-header-actions">
           <nav className="site-nav">
-            <Link href={withLocale("/#experiencia", locale)}>
+            <Link href={withLocale("/#experiencia", locale)} onClick={closeSidebar}>
               {copy.nav.experience}
             </Link>
-            <Link href={withLocale("/#skills", locale)}>{copy.nav.skills}</Link>
-            <Link href={withLocale("/#contacto", locale)}>
+            <Link href={withLocale("/#skills", locale)} onClick={closeSidebar}>
+              {copy.nav.skills}
+            </Link>
+            <Link href={withLocale("/#contacto", locale)} onClick={closeSidebar}>
               {copy.nav.contact}
             </Link>
-            <Link href={withLocale("/articulos", locale)} className="nav-cta">
+            <Link
+              href={withLocale("/articulos", locale)}
+              className="nav-cta"
+              onClick={closeSidebar}
+            >
               {copy.nav.articles}
             </Link>
           </nav>
@@ -43,6 +89,7 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
           <LanguageToggle
             locale={locale}
             label={copy.localeSwitchLabel}
+            onClick={closeSidebar}
           />
         </div>
       </div>

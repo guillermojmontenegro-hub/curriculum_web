@@ -2,6 +2,22 @@ import type { Metadata } from "next";
 import { Inter, Roboto, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
+const themeInitializer = `
+(() => {
+  const storageKey = "theme-preference";
+  const root = document.documentElement;
+  const storedTheme = window.localStorage.getItem(storageKey);
+  const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
+    ? "light"
+    : "dark";
+  const theme =
+    storedTheme === "light" || storedTheme === "dark" ? storedTheme : systemTheme;
+
+  root.dataset.theme = theme;
+  root.style.colorScheme = theme;
+})();
+`;
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -42,8 +58,12 @@ export default function RootLayout({
     <html
       lang="es"
       className={`${inter.variable} ${roboto.variable} ${spaceGrotesk.variable}`}
+      suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        <script dangerouslySetInnerHTML={{ __html: themeInitializer }} />
+        {children}
+      </body>
     </html>
   );
 }

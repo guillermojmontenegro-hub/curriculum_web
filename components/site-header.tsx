@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 import { LanguageToggle } from "@/components/language-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import type { Locale } from "@/lib/i18n";
 import { getDictionary, withLocale } from "@/lib/i18n";
 
@@ -85,6 +86,12 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
               {copy.nav.articles}
             </Link>
           </nav>
+
+          <ThemeToggle
+            darkLabel={copy.themeToggleToDark}
+            lightLabel={copy.themeToggleToLight}
+            onClick={closeSidebar}
+          />
 
           <LanguageToggle
             locale={locale}

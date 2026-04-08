@@ -3,7 +3,6 @@ title: "The idea of AGI is broken, hi SROW"
 date: "2025-09-13"
 description: "SROW(Same Result in its Own Way) is the real way to measure AI impact"
 author: "gmontenegro"
-tags: ["ai", "AGI", "ASI", "SROW"]
 previewImageUrl: "preview.jpg"
 ---
 

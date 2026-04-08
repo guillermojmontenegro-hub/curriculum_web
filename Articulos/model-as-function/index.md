@@ -3,8 +3,6 @@ title: "No sci-fi, no philosophy: Capabilities and Limits of Neural Networks"
 date: "2025-12-24"
 description: "Understanding neural networks as function approximators and their inherent limits."
 author: "gmontenegro"
-tags:
-  ["neural-networks", "llm", "function-approximation", "reinforcement-learning"]
 previewImageUrl: "preview.png"
 ---
 

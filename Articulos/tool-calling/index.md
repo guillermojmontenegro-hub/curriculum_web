@@ -3,7 +3,6 @@ title: "Tools for LLMs step by step"
 date: "2025-09-29"
 description: "Step‑by‑step guide on how system prompts define tool usage in large language models, with three difficulty levels covering basic calls, streaming inference, and token‑level fine‑tuning."
 author: "gmontenegro"
-tags: ["LLM", "tools", "agents"]
 previewImageUrl: "preview.jpg"
 ---
 

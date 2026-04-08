@@ -3,7 +3,6 @@ title: "Sketching the New Coding Paradigm from the Roots"
 date: "2025-08-27"
 description: "A brief sketch of the basic rules for development in the world of AI agents"
 author: "gmontenegro"
-tags: ["ai", "agents", "coding", "software design"]
 previewImageUrl: "preview.webp"
 ---
 

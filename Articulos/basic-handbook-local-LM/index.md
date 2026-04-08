@@ -3,15 +3,6 @@ title: "Running LLMs Locally: Read This Before You Try at Home"
 date: "2025-08-31"
 description: "A basic practical guide of concepts to understand open language models."
 author: "gontenegro"
-tags:
-  [
-    "open-models",
-    "local-models",
-    "open-source",
-    "inference-optimization",
-    "quantization",
-    "hardware",
-  ]
 previewImageUrl: "preview.png"
 ---
 

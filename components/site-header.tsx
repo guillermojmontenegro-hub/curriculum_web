@@ -68,7 +68,7 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
               onClick={() => setIsProfileExpanded((current) => !current)}
             >
               <Image
-                src="/assets/fotoCV.jpg"
+                src="/assets/fotoCV-thumb.jpg"
                 alt="Foto de perfil de Guillermo Montenegro"
                 width={160}
                 height={160}

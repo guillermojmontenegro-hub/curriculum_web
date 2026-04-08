@@ -134,7 +134,7 @@ export default async function ArticleDetailPage({
             >
               <div className="article-mini-media">
                 <img
-                  src={`/api/article-preview/${item.slug}`}
+                  src={`/api/article-preview/${item.slug}?variant=thumb`}
                   alt={`${copy.articleDetail.previewAlt} ${item.title}`}
                   className="cover-image"
                 />

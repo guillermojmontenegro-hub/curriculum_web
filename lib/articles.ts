@@ -184,15 +184,27 @@ export function getAllArticlesMeta(): ArticleMeta[] {
   );
 }
 
-export function findPreviewAssetPath(slug: string): string | null {
+type PreviewVariant = "default" | "thumb";
+
+export function findPreviewAssetPath(
+  slug: string,
+  variant: PreviewVariant = "default",
+): string | null {
   const articleDir = path.join(ARTICLES_DIR, slug);
   if (!fs.existsSync(articleDir)) {
     return null;
   }
 
-  const previewFile = fs
-    .readdirSync(articleDir)
-    .find((name) => /^preview\.(png|jpg|jpeg|webp)$/i.test(name));
+  const previewFiles = fs.readdirSync(articleDir);
+
+  const thumbFile =
+    variant === "thumb"
+      ? previewFiles.find((name) => /^preview-thumb\.(png|jpg|jpeg|webp)$/i.test(name))
+      : null;
+
+  const previewFile =
+    thumbFile ??
+    previewFiles.find((name) => /^preview\.(png|jpg|jpeg|webp)$/i.test(name));
 
   return previewFile ? path.join(articleDir, previewFile) : null;
 }

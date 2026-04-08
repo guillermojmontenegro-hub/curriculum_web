@@ -9,9 +9,14 @@ const MIME_BY_EXT: Record<string, string> = {
   ".webp": "image/webp"
 };
 
-export async function GET(_: Request, { params }: { params: Promise<{ slug: string }> }) {
+export async function GET(
+  request: Request,
+  { params }: { params: Promise<{ slug: string }> },
+) {
   const { slug } = await params;
-  const previewPath = findPreviewAssetPath(slug);
+  const url = new URL(request.url);
+  const variant = url.searchParams.get("variant") === "thumb" ? "thumb" : "default";
+  const previewPath = findPreviewAssetPath(slug, variant);
 
   if (!previewPath) {
     return new Response("Preview no encontrada", { status: 404 });

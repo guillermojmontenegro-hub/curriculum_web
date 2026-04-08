@@ -62,7 +62,7 @@ export function ArticlesExplorer({
                 style={
                   {
                     "--delay": `${index * 80}ms`,
-                    "--article-image": `url("/api/article-preview/${article.slug}")`,
+                    "--article-image": `url("/api/article-preview/${article.slug}?variant=thumb")`,
                   } as CSSProperties
                 }
               >

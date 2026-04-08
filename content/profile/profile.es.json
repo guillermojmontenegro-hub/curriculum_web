@@ -87,9 +87,8 @@
     }
   ],
   "languages": [
-    { "name": "Español", "level": "Native or Bilingual" },
-    { "name": "Inglés", "level": "Full Professional" },
-    { "name": "Japonés", "level": "Professional Working" }
+    { "name": "Español", "level": "Nativo" },
+    { "name": "Inglés", "level": "Full Professional" }
   ],
   "contact": {
     "email": "guillermo.j.montenegro@gmail.com",

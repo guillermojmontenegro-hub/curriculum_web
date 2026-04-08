@@ -8,6 +8,36 @@ import { formatArticleDate } from "@/lib/formatters";
 import { getDictionary, getLocale, withLocale } from "@/lib/i18n";
 import { getProfile } from "@/lib/profile";
 
+function ContactIcon({ type }: { type: "email" | "linkedin" | "location" }) {
+  if (type === "email") {
+    return (
+      <span className="contact-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25zm1.86-.25L12 11.73 19.14 6.5zM20 7.33l-6.97 5.1a1.75 1.75 0 0 1-2.06 0L4 7.33v9.92c0 .41.34.75.75.75h14.5c.41 0 .75-.34.75-.75z" />
+        </svg>
+      </span>
+    );
+  }
+
+  if (type === "linkedin") {
+    return (
+      <span className="contact-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M6.8 8.37A1.57 1.57 0 1 1 6.82 5.23 1.57 1.57 0 0 1 6.8 8.37m1.3 2.13v8.25H5.5V10.5zm4.11 0h2.49v1.13h.04c.35-.66 1.2-1.36 2.47-1.36 2.65 0 3.14 1.74 3.14 4v4.48h-2.59v-3.97c0-.95-.02-2.17-1.32-2.17-1.32 0-1.52 1.03-1.52 2.1v4.04h-2.59V10.5z" />
+        </svg>
+      </span>
+    );
+  }
+
+  return (
+    <span className="contact-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M12 21s6-5.69 6-11a6 6 0 1 0-12 0c0 5.31 6 11 6 11m0-8.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5" />
+      </svg>
+    </span>
+  );
+}
+
 export default async function HomePage({
   searchParams,
 }: {
@@ -22,7 +52,6 @@ export default async function HomePage({
     ...article,
     formattedDate: formatArticleDate(article.date, locale),
   }));
-  const latestArticles = formattedArticles.slice(0, 3);
   const spotlightArticles = formattedArticles.slice(0, 8);
   const stats = [
     {
@@ -37,9 +66,7 @@ export default async function HomePage({
     },
     {
       label: copy.home.stats.topicsLabel,
-      value: String(
-        new Set(allArticles.flatMap((article) => article.tags)).size,
-      ),
+      value: String(allArticles.length),
       detail: copy.home.stats.topicsDetail,
     },
   ];
@@ -156,82 +183,6 @@ export default async function HomePage({
         </article>
       </section>
 
-      <section className="container section-shell">
-        <div className="section-heading-row reveal">
-          <div>
-            <p className="section-kicker">{copy.home.articlesKicker}</p>
-            <h2 className="section-title">{copy.home.articlesTitle}</h2>
-          </div>
-          <p className="section-copy">{copy.home.articlesCopy}</p>
-        </div>
-
-        <div className="article-showcase">
-          {latestArticles.map((article, index) => (
-            <Link
-              key={article.slug}
-              href={withLocale(`/articulos/${article.slug}`, locale)}
-              className={`article-teaser card reveal card-link ${index === 0 ? "article-teaser-primary" : ""}`}
-              style={{ "--delay": `${index * 100}ms` } as CSSProperties}
-            >
-              <div className="article-teaser-media">
-                <img
-                  src={`/api/article-preview/${article.slug}`}
-                  alt={`${copy.home.previewAlt} ${article.title}`}
-                  className="cover-image"
-                />
-              </div>
-
-              <div className="article-teaser-content">
-                <div className="meta-row">
-                  <span>{article.formattedDate}</span>
-                  <span>
-                    {copy.home.writtenBy} {profile.name}
-                  </span>
-                </div>
-                <h3 className="article-teaser-title">{article.title}</h3>
-                <p className="article-teaser-description">
-                  {article.description}
-                </p>
-                <div className="chip-list compact">
-                  {article.tags.map((tag) => (
-                    <span
-                      key={`${article.slug}-${tag}`}
-                      className="chip subtle"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-                <span className="inline-link">{copy.home.readArticle}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        <div
-          className="section-footer reveal"
-          style={{ "--delay": "160ms" } as CSSProperties}
-        >
-          <div className="section-footer-copy">
-            <p className="section-footer-title">
-              {copy.home.articleArchiveTitle}
-            </p>
-            <p>{copy.home.articleArchiveCopy}</p>
-          </div>
-          <div className="hero-actions">
-            <Link
-              href={withLocale("/articulos", locale)}
-              className="button-primary"
-            >
-              {copy.home.openArticlesLibrary}
-            </Link>
-            <a href="#contacto" className="button-secondary">
-              {copy.home.discussProjects}
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section className="container section-shell two-column-section">
         <article className="panel-card card reveal">
           <p className="section-kicker">{copy.home.educationKicker}</p>
@@ -277,14 +228,20 @@ export default async function HomePage({
 
           <div className="contact-grid">
             <div className="contact-item">
-              <span className="contact-label">Email</span>
+              <span className="contact-label-with-icon">
+                <ContactIcon type="email" />
+                <span className="contact-label">Email</span>
+              </span>
               <a href={`mailto:${profile.contact.email}`}>
                 {profile.contact.email}
               </a>
             </div>
             {profile.contact.linkedin ? (
               <div className="contact-item">
-                <span className="contact-label">LinkedIn</span>
+                <span className="contact-label-with-icon">
+                  <ContactIcon type="linkedin" />
+                  <span className="contact-label">LinkedIn</span>
+                </span>
                 <a
                   href={profile.contact.linkedin}
                   target="_blank"
@@ -295,28 +252,15 @@ export default async function HomePage({
               </div>
             ) : null}
             <div className="contact-item">
-              <span className="contact-label">{copy.home.location}</span>
+              <span className="contact-label-with-icon">
+                <ContactIcon type="location" />
+                <span className="contact-label">{copy.home.location}</span>
+              </span>
               <span>{profile.contact.location}</span>
             </div>
           </div>
 
           <div className="hero-actions">
-            <a
-              href={`mailto:${profile.contact.email}`}
-              className="button-primary"
-            >
-              {copy.home.writeToMe}
-            </a>
-            {profile.contact.linkedin ? (
-              <a
-                href={profile.contact.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="button-secondary"
-              >
-                {copy.home.viewLinkedin}
-              </a>
-            ) : null}
             {profile.contact.github ? (
               <a
                 href={profile.contact.github}

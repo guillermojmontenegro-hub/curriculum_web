@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { CSSProperties } from "react";
 
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -92,28 +91,6 @@ export default async function ArticleDetailPage({
                 {copy.articleDetail.writtenBy} {profile.name}
               </span>
             </div>
-
-            <div className="chip-list">
-              {article.tags.map((tag) => (
-                <Link
-                  key={tag}
-                  href={withLocale(
-                    `/articulos?tag=${encodeURIComponent(tag)}`,
-                    locale,
-                  )}
-                  className="chip-link"
-                >
-                  #{tag}
-                </Link>
-              ))}
-            </div>
-
-            <article className="author-note card compact-note">
-              <p className="author-note-title">
-                {copy.articleDetail.professionalExperienceTitle}
-              </p>
-              <p>{copy.articleDetail.professionalExperienceCopy}</p>
-            </article>
           </div>
 
           <div className="article-cover-card card">
@@ -126,34 +103,13 @@ export default async function ArticleDetailPage({
         </div>
       </section>
 
-      <section className="container article-reading-layout">
+      <section className="container article-reading-main">
         <article className="article-paper card reveal">
           <div
             className="article-content"
             dangerouslySetInnerHTML={{ __html: article.contentHtml }}
           />
         </article>
-
-        <aside
-          className="article-side-panel card reveal"
-          style={{ "--delay": "120ms" } as CSSProperties}
-        >
-          <p className="section-kicker">
-            {copy.articleDetail.guidedReadingKicker}
-          </p>
-          <h2 className="section-title">
-            {copy.articleDetail.guidedReadingTitle}
-          </h2>
-          <p className="section-copy">{copy.articleDetail.guidedReadingCopy}</p>
-          <div className="hero-actions stack-mobile">
-            <Link href={withLocale("/articulos", locale)} className="button-primary">
-              {copy.articleDetail.viewAllArticles}
-            </Link>
-            <Link href={withLocale("/#contacto", locale)} className="button-secondary">
-              {copy.articleDetail.contactMe}
-            </Link>
-          </div>
-        </aside>
       </section>
 
       <section className="container section-shell">
@@ -178,7 +134,7 @@ export default async function ArticleDetailPage({
             >
               <div className="article-mini-media">
                 <img
-                  src={`/api/article-preview/${item.slug}`}
+                  src={`/api/article-preview/${item.slug}?variant=thumb`}
                   alt={`${copy.articleDetail.previewAlt} ${item.title}`}
                   className="cover-image"
                 />

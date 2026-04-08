@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { LanguageToggle } from "@/components/language-toggle";
@@ -15,6 +16,7 @@ type SiteHeaderProps = {
 export function SiteHeader({ locale }: SiteHeaderProps) {
   const copy = getDictionary(locale);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isProfileExpanded, setIsProfileExpanded] = useState(false);
   const toggleLabel =
     locale === "es" ? "Alternar navegación" : "Toggle navigation";
   const closeSidebar = () => setIsSidebarOpen(false);
@@ -53,18 +55,38 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
 
       <div className="container site-header-inner">
         <div className="site-header-topbar">
-          <Link
-            href={withLocale("/", locale)}
-            className="brand-lockup"
-            aria-label={locale === "es" ? "Inicio" : "Home"}
-            onClick={closeSidebar}
-          >
-            <span className="brand-mark">GM</span>
-            <span className="brand-copy">
+          <div className="brand-lockup">
+            <button
+              type="button"
+              className={`brand-mark brand-mark-button ${isProfileExpanded ? "is-expanded" : ""}`}
+              aria-label={
+                isProfileExpanded
+                  ? "Reducir foto de perfil"
+                  : "Ampliar foto de perfil"
+              }
+              aria-pressed={isProfileExpanded}
+              onClick={() => setIsProfileExpanded((current) => !current)}
+            >
+              <Image
+                src="/assets/fotoCV.jpg"
+                alt="Foto de perfil de Guillermo Montenegro"
+                width={160}
+                height={160}
+                className="brand-mark-image"
+                sizes="(max-width: 640px) 56px, 160px"
+                priority
+              />
+            </button>
+            <Link
+              href={withLocale("/", locale)}
+              className="brand-copy"
+              aria-label={locale === "es" ? "Inicio" : "Home"}
+              onClick={closeSidebar}
+            >
               <strong>Guillermo J. Montenegro</strong>
               <span>{copy.brandSubtitle}</span>
-            </span>
-          </Link>
+            </Link>
+          </div>
         </div>
 
         <div className="site-header-actions">

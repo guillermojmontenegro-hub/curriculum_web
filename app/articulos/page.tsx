@@ -28,7 +28,6 @@ export default async function ArticlesPage({
     ...article,
     formattedDate: formatArticleDate(article.date, locale),
   }));
-  const topicCount = new Set(articles.flatMap((article) => article.tags)).size;
 
   return (
     <main className="page-shell articles-shell">
@@ -54,7 +53,7 @@ export default async function ArticlesPage({
               <span>{copy.articles.ownArticles}</span>
             </article>
             <article className="insight-card card">
-              <strong>{topicCount}</strong>
+              <strong>{articles.length}</strong>
               <span>{copy.articles.topicsToExplore}</span>
             </article>
             <article className="insight-card card">

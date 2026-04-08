@@ -62,7 +62,6 @@ Mi recorrido empezó mucho antes de mi primer trabajo formal: a los 12 años ya 
 
 - Español: Native or Bilingual
 - Inglés: Full Professional
-- Japonés: Professional Working
 
 ## Contacto
 

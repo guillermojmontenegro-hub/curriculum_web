@@ -79,7 +79,7 @@ type Dictionary = {
     read: string;
     noResultsTitle: string;
     noResultsCopy: string;
-    resultsSummary: (count: number, tag: string) => string;
+    resultsSummary: (count: number) => string;
     writtenBy: string;
     by: string;
     previewAlt: string;
@@ -119,7 +119,7 @@ const dictionaries: Record<Locale, Dictionary> = {
     home: {
       heroKicker: "Perfil profesional",
       heroTitle:
-        "Desarrollador de software con mas de 15 años de experiencia en mobile, web e IA aplicada.",
+        "Desarrollador Full Stack con mas de 15 años de experiencia en mobile, web e IA aplicada.",
       contactMe: "Contactarme",
       exploreArticles: "Explorar articulos",
       stats: {
@@ -186,7 +186,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       libraryCopy:
         "Esta seccion muestra una parte central de mi experiencia: investigacion aplicada, criterio técnico y capacidad para explicar con claridad lo que experimento, construyo y aprendo.",
       ownArticles: "articulos técnicos propios",
-      topicsToExplore: "temas para explorar por tag",
+      topicsToExplore: "articulos disponibles para explorar",
       experienceLinkedContent:
         "contenido vinculado a mi experiencia y mirada profesional",
       whyLibraryMatters: "Por que esta biblioteca importa",
@@ -194,19 +194,19 @@ const dictionaries: Record<Locale, Dictionary> = {
         "No es una coleccion aislada de posts. Son articulos que escribi para dejar evidencia de mi forma de pensar, investigar y resolver problemas en IA, agentes, modelos y desarrollo de software.",
       loadingTitle: "Cargando explorador de articulos...",
       loadingCopy:
-        "Preparando filtros, busqueda y accesos rapidos a todo el contenido.",
-      searchLabel: "Buscar por titulo, descripcion o tema",
+        "Preparando la busqueda y los accesos rapidos a todo el contenido.",
+      searchLabel: "Buscar por titulo o descripcion",
       searchPlaceholder: "Ej: determinismo, agentes, modelos locales...",
-      clearFilters: "Limpiar filtros",
+      clearFilters: "Limpiar busqueda",
       all: "Todos",
       featured: "Articulo destacado",
       openArticle: "Abrir articulo",
       read: "Leer",
       noResultsTitle: "No encontre articulos con ese filtro.",
       noResultsCopy:
-        "Probá otra palabra clave o volvé a todos los temas para recorrer el contenido completo.",
-      resultsSummary: (count, tag) =>
-        `${count} articulo${count === 1 ? "" : "s"} visible${tag ? `s en #${tag}` : "s"}`,
+        "Probá otra palabra clave para recorrer el contenido completo.",
+      resultsSummary: (count) =>
+        `${count} articulo${count === 1 ? "" : "s"} visible${count === 1 ? "" : "s"}`,
       writtenBy: "Escrito por",
       by: "Por",
       previewAlt: "Preview de",
@@ -248,7 +248,7 @@ const dictionaries: Record<Locale, Dictionary> = {
     home: {
       heroKicker: "Professional profile",
       heroTitle:
-        "Software developer with more than 15 years of experience across mobile, web, and applied AI.",
+        "Full Stack developer with more than 15 years of experience across mobile, web, and applied AI.",
       contactMe: "Contact me",
       exploreArticles: "Explore articles",
       stats: {
@@ -315,7 +315,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       libraryCopy:
         "This section shows a central part of my experience: applied research, technical judgment, and the ability to clearly explain what I experiment with, build, and learn.",
       ownArticles: "original technical articles",
-      topicsToExplore: "topics to explore by tag",
+      topicsToExplore: "available articles to explore",
       experienceLinkedContent:
         "content directly connected to my experience and professional perspective",
       whyLibraryMatters: "Why this library matters",
@@ -323,19 +323,19 @@ const dictionaries: Record<Locale, Dictionary> = {
         "This is not an isolated collection of posts. These are articles I wrote to show how I think, research, and solve problems in AI, agents, models, and software development.",
       loadingTitle: "Loading article explorer...",
       loadingCopy:
-        "Preparing filters, search, and quick access to all the content.",
-      searchLabel: "Search by title, description, or topic",
+        "Preparing search and quick access to all the content.",
+      searchLabel: "Search by title or description",
       searchPlaceholder: "Example: determinism, agents, local models...",
-      clearFilters: "Clear filters",
+      clearFilters: "Clear search",
       all: "All",
       featured: "Featured article",
       openArticle: "Open article",
       read: "Read",
       noResultsTitle: "I couldn't find articles for that filter.",
       noResultsCopy:
-        "Try another keyword or go back to all topics to browse the full library.",
-      resultsSummary: (count, tag) =>
-        `${count} visible article${count === 1 ? "" : "s"}${tag ? ` in #${tag}` : ""}`,
+        "Try another keyword to browse the full library.",
+      resultsSummary: (count) =>
+        `${count} visible article${count === 1 ? "" : "s"}`,
       writtenBy: "Written by",
       by: "By",
       previewAlt: "Preview of",

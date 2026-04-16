@@ -119,7 +119,7 @@ const dictionaries: Record<Locale, Dictionary> = {
     home: {
       heroKicker: "Perfil profesional",
       heroTitle:
-        "Desarrollador Full Stack con mas de 15 años de experiencia en mobile, web e IA aplicada.",
+        "Mobile, Web Full Stack y AI Engineer con mas de 15 años de experiencia.",
       contactMe: "Contactarme",
       exploreArticles: "Explorar articulos",
       stats: {
@@ -170,7 +170,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       contactTitle:
         "Disponible para proyectos, consultoria, investigacion aplicada y colaboraciones tecnicas.",
       contactCopy:
-        "Si queres trabajar conmigo o profundizar sobre alguno de los articulos, podemos seguir la conversacion por correo o LinkedIn.",
+        "Si queres trabajar conmigo o profundizar sobre alguno de los articulos, podemos seguir la conversacion por correo, LinkedIn o GitHub.",
       linkedinProfile: "Ver perfil profesional",
       location: "Ubicacion",
       writeToMe: "Escribirme",
@@ -248,7 +248,7 @@ const dictionaries: Record<Locale, Dictionary> = {
     home: {
       heroKicker: "Professional profile",
       heroTitle:
-        "Full Stack developer with more than 15 years of experience across mobile, web, and applied AI.",
+        "Mobile, Web Full Stack, and AI Engineer with more than 15 years of experience.",
       contactMe: "Contact me",
       exploreArticles: "Explore articles",
       stats: {
@@ -299,7 +299,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       contactTitle:
         "Available for projects, consulting, applied research, and technical collaborations.",
       contactCopy:
-        "If you'd like to work with me or go deeper on any of the articles, we can continue the conversation by email or LinkedIn.",
+        "If you'd like to work with me or go deeper on any of the articles, we can continue the conversation by email, LinkedIn, or GitHub.",
       linkedinProfile: "View professional profile",
       location: "Location",
       writeToMe: "Email me",

@@ -1,48 +1,60 @@
 {
   "name": "Guillermo J. Montenegro",
-  "headline": "Software developer with more than 15 years of experience, focused on applied AI",
-  "summary": "My experience started long before my first job: at age 12 I was already programming in Basic and Pascal, then in C and Assembly. At 20 I developed an operating system kernel based on what I learned from Andrew S. Tanenbaum. Today I work in applied research with LLMs, agents, and AI tools, alongside mobile and web development to take solutions from prototype to production.",
+  "headline": "Mobile, Web Full Stack, and AI Engineer with more than 15 years of experience",
+  "summary": "Senior developer oriented to Mobile, Web Full Stack, and AI Engineer roles. I bring experience across Android and iOS mobile development, web development with React and Next.js, Python backend work, and integration of AI-based solutions. I adopted AI tools early as coding assistants and workflow accelerators, and that practice evolved into hands-on work with LLMs, agents, tool calling, prompting, and applied automation.",
   "skills": [
-    "Web development",
-    "Software development",
-    "Research and development (R&D)",
-    "Android",
-    "iOS",
-    "Cross-platform",
-    "React",
-    "TypeScript",
-    "Kotlin",
-    "Java",
-    "Swift",
-    "Objective-C",
-    "Python",
-    "Tailwind CSS",
-    "PyTorch",
+    "LLMs",
+    "Agents",
+    "Tool Calling",
+    "Prompt Engineering",
+    "Context Engineering",
+    "MCP Servers",
+    "LangChain",
+    "Langflow",
+    "n8n",
     "Ollama",
     "LM Studio",
-    "MCP Servers",
+    "PyTorch",
+    "Android",
+    "Kotlin",
+    "Java",
+    "Jetpack Compose",
+    "iOS",
+    "Swift",
+    "Objective-C",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Tailwind CSS",
     "Docker",
-    "CI/CD"
+    "CI/CD",
+    "Azure",
+    "GCP"
   ],
   "experience": [
     {
       "company": "Grid Dynamics",
-      "role": "T3 Full Stack Developer",
+      "role": "Full Stack Developer (T3) / AI Engineer",
       "period": "Mar 2025 - Mar 2026",
       "highlights": [
-        "AI Researcher and Senior Software Engineer focused on applied artificial intelligence research.",
-        "Experimentation with LLMs, development of agents and tools, and design of AI-assisted workflows.",
-        "Development of prototypes and solutions exploring model integration, deterministic behavior, and system orchestration."
+        "Contributed to the design and development of a business-oriented web application, from functional definition through delivery.",
+        "Worked as an AI Engineer, AI Researcher, and Senior Software Engineer in applied research involving LLMs, agents, and tool ecosystems.",
+        "Designed AI-assisted workflows and prototypes focused on model integration, orchestration, and deterministic behavior.",
+        "Implemented automation, internal tools, and engineering practices to strengthen development and operations cycles."
       ]
     },
     {
       "company": "Mobile Computing S.A.",
-      "role": "Senior Full Stack Developer",
+      "role": "Senior Full Stack Developer / AI Engineer",
       "period": "Jun 2013 - Mar 2025",
       "highlights": [
-        "More than 10 years of experience in mobile development with Android, iOS, and cross-platform technologies.",
-        "Participation in the design and development of mobile and web applications in corporate and research environments.",
-        "Experience building mobile applications and games with a focus on scalable, product-oriented solutions."
+        "More than a decade of continuous work in mobile development across Android, iOS, and cross-platform technologies.",
+        "Designed and built mobile and web applications for corporate and research environments.",
+        "Integrated mobile apps, APIs, supporting backends, and related web frontends.",
+        "Performed AI Engineer work in the exploration, evaluation, and incorporation of AI tools for productivity, automation, and new development workflows.",
+        "Built scalable, maintainable solutions oriented toward real product operation."
       ]
     },
     {
@@ -51,8 +63,8 @@
       "period": "May 2010 - Jun 2013",
       "highlights": [
         "Development of enterprise and mobile applications in C#, VB .NET, ASP .NET, Objective-C, Java, and JavaScript.",
-        "Development of games and mobile apps including Rescue me from Asylum, AfterLife Samurai, and DimBot Unit 12.",
-        "Use of XCode, Eclipse, Blender, Gimp, Unity Engine, and Zebra scripting for label printing."
+        "Worked on mobile games and apps such as Rescue me from Asylum, AfterLife Samurai, and DimBot Unit 12.",
+        "Used Xcode, Eclipse, Blender, Gimp, Unity Engine, and Zebra scripting."
       ]
     },
     {
@@ -67,12 +79,12 @@
     }
   ],
   "projects": [
-    "Applied AI research with LLMs and agents",
-    "AI-assisted development workflows",
-    "Corporate mobile development for Android/iOS",
-    "Full Stack web development",
-    "Prototypes for orchestration and determinism in AI",
-    "Technical content production about AI"
+    "AIDZero: modular runtime for LLM agents in Python with tools and MCP gateway",
+    "Personal CV website and technical library built with Next.js, React, and TypeScript",
+    "Native Android applications with Kotlin, Jetpack Compose, and maintainable architecture",
+    "iOS applications with Swift, UIKit, and SwiftUI",
+    "Web frontends with React, Next.js, and TypeScript",
+    "Python backends and automation for AI and mobile/web products"
   ],
   "education": [
     {
@@ -88,12 +100,12 @@
   ],
   "languages": [
     { "name": "Spanish", "level": "Native or bilingual" },
-    { "name": "English", "level": "Full professional" },
-    { "name": "Japanese", "level": "Professional working" }
+    { "name": "English", "level": "C1" }
   ],
   "contact": {
     "email": "guillermo.j.montenegro@gmail.com",
-    "location": "Buenos Aires and surrounding area",
-    "linkedin": "https://www.linkedin.com/in/guillermo-j-montenegro-7b9a7a35"
+    "location": "Buenos Aires, Argentina",
+    "linkedin": "https://www.linkedin.com/in/guillermo-j-montenegro-7b9a7a35",
+    "github": "https://github.com/guillermojmontenegro-hub"
   }
 }

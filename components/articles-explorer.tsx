@@ -47,6 +47,37 @@ export function ArticlesExplorer({
 
   return (
     <div className="article-explorer">
+      <section className="card explorer-toolbar reveal">
+        <div className="explorer-toolbar-top">
+          <label className="search-field">
+            <span className="search-label">{copy.articles.searchLabel}</span>
+            <span className="search-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m21 21-4.35-4.35m2.35-5.4A7.75 7.75 0 1 1 3.5 11.25a7.75 7.75 0 0 1 15.5 0Z" />
+              </svg>
+              <input
+                className="search-input"
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder={copy.articles.searchPlaceholder}
+              />
+            </span>
+          </label>
+
+          <div className="explorer-summary">
+            <p className="explorer-results">
+              {copy.articles.resultsSummary(filteredArticles.length)}
+            </p>
+            {query && (
+              <button type="button" className="inline-action" onClick={clearFilters}>
+                {copy.articles.clearFilters}
+              </button>
+            )}
+          </div>
+        </div>
+      </section>
+
       {filteredArticles.length ? (
         <section className="article-library-grid">
           {filteredArticles.map((article, index) => {
@@ -100,36 +131,6 @@ export function ArticlesExplorer({
           <p className="empty-state-copy">{copy.articles.noResultsCopy}</p>
         </section>
       )}
-
-      <section className="card explorer-toolbar reveal">
-        <div className="explorer-toolbar-top">
-          <label className="search-field">
-            <span className="search-label">{copy.articles.searchLabel}</span>
-            <input
-              className="search-input"
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder={copy.articles.searchPlaceholder}
-            />
-          </label>
-
-          <div className="explorer-summary">
-            <p className="explorer-results">
-              {copy.articles.resultsSummary(filteredArticles.length)}
-            </p>
-            {query && (
-              <button
-                type="button"
-                className="inline-action"
-                onClick={clearFilters}
-              >
-                {copy.articles.clearFilters}
-              </button>
-            )}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

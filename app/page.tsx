@@ -76,9 +76,17 @@ export default async function HomePage({
       <SiteHeader locale={locale} />
 
       <section className="container hero-section">
+        <div className="hero-orbit hero-orbit-one" aria-hidden="true" />
+        <div className="hero-orbit hero-orbit-two" aria-hidden="true" />
         <div className="hero-grid">
           <div className="hero-copy reveal">
-            <p className="section-kicker">{copy.home.heroKicker}</p>
+            <div className="hero-intro-row">
+              <p className="section-kicker">{copy.home.heroKicker}</p>
+              <span className="availability-pill">
+                <span aria-hidden="true" />
+                {locale === "es" ? "Disponible para crear" : "Available to build"}
+              </span>
+            </div>
             <h1 className="hero-title">{copy.home.heroTitle}</h1>
             <p className="hero-lead">{profile.summary}</p>
             <p className="hero-subtitle">{profile.headline}</p>
@@ -102,12 +110,20 @@ export default async function HomePage({
                   className="stat-card"
                   style={{ "--delay": `${index * 100}ms` } as CSSProperties}
                 >
-                  <p className="stat-label">{stat.label}</p>
-                  <strong className="stat-value">{stat.value}</strong>
+                  <div className="stat-card-heading">
+                    <p className="stat-label">{stat.label}</p>
+                    <span className="stat-index">0{index + 1}</span>
+                  </div>
+                  <strong className="stat-value">{stat.value}<span>+</span></strong>
                   <p className="stat-detail">{stat.detail}</p>
                 </article>
               ))}
             </div>
+
+            <a className="hero-scroll-cue" href="#experiencia">
+              <span aria-hidden="true" />
+              {locale === "es" ? "Explorar perfil" : "Explore profile"}
+            </a>
           </div>
 
           <HeroSpotlight
@@ -122,7 +138,9 @@ export default async function HomePage({
       <section id="experiencia" className="container section-shell">
         <div className="section-heading-row reveal">
           <div>
-            <p className="section-kicker">{copy.home.experienceKicker}</p>
+            <p className="section-kicker numbered-kicker">
+              <span>01</span>{copy.home.experienceKicker}
+            </p>
             <h2 className="section-title">{copy.home.experienceTitle}</h2>
           </div>
           <p className="section-copy">{copy.home.experienceCopy}</p>
@@ -135,11 +153,12 @@ export default async function HomePage({
               className="timeline-card card reveal"
               style={{ "--delay": `${index * 110}ms` } as CSSProperties}
             >
-              <p className="timeline-period">{item.period}</p>
+              <div className="timeline-card-topline">
+                <p className="timeline-period">{item.period}</p>
+                <span className="timeline-number">0{index + 1}</span>
+              </div>
               <h3 className="timeline-title">{item.role}</h3>
-              <p className="timeline-company">
-                {item.company} · {item.period}
-              </p>
+              <p className="timeline-company">{item.company}</p>
               <ul className="timeline-highlights">
                 {item.highlights.map((highlight) => (
                   <li key={highlight}>{highlight}</li>
@@ -155,7 +174,7 @@ export default async function HomePage({
         className="container section-shell two-column-section"
       >
         <article className="panel-card card reveal">
-          <p className="section-kicker">{copy.home.skillsKicker}</p>
+          <p className="section-kicker numbered-kicker"><span>02</span>{copy.home.skillsKicker}</p>
           <h2 className="section-title">{copy.home.skillsTitle}</h2>
           <div className="chip-list spacious">
             {profile.skills.map((skill) => (
@@ -170,7 +189,7 @@ export default async function HomePage({
           className="panel-card card reveal"
           style={{ "--delay": "100ms" } as CSSProperties}
         >
-          <p className="section-kicker">{copy.home.projectsKicker}</p>
+          <p className="section-kicker numbered-kicker"><span>03</span>{copy.home.projectsKicker}</p>
           <h2 className="section-title">{copy.home.projectsTitle}</h2>
           <div className="project-grid">
             {profile.projects.map((project) => (
@@ -185,7 +204,7 @@ export default async function HomePage({
 
       <section className="container section-shell two-column-section">
         <article className="panel-card card reveal">
-          <p className="section-kicker">{copy.home.educationKicker}</p>
+          <p className="section-kicker numbered-kicker"><span>04</span>{copy.home.educationKicker}</p>
           <h2 className="section-title">{copy.home.educationTitle}</h2>
           <ul className="info-list">
             {profile.education.map((item) => (
@@ -203,7 +222,7 @@ export default async function HomePage({
           className="panel-card card reveal"
           style={{ "--delay": "100ms" } as CSSProperties}
         >
-          <p className="section-kicker">{copy.home.languagesKicker}</p>
+          <p className="section-kicker numbered-kicker"><span>05</span>{copy.home.languagesKicker}</p>
           <h2 className="section-title">{copy.home.languagesTitle}</h2>
           <ul className="info-list">
             {profile.languages.map((lang) => (
@@ -218,8 +237,9 @@ export default async function HomePage({
 
       <section id="contacto" className="container section-shell">
         <article className="contact-banner card reveal">
+          <span className="contact-watermark" aria-hidden="true">LET&apos;S TALK</span>
           <div>
-            <p className="section-kicker">{copy.home.contactKicker}</p>
+            <p className="section-kicker numbered-kicker"><span>06</span>{copy.home.contactKicker}</p>
             <h2 className="section-title contact-title">
               {copy.home.contactTitle}
             </h2>

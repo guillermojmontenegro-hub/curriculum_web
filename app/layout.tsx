@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Roboto, Space_Grotesk } from "next/font/google";
+import { MotionEffects } from "@/components/motion-effects";
 import "./globals.css";
 
 const themeInitializer = `
@@ -62,6 +63,7 @@ export default function RootLayout({
     >
       <body>
         <script dangerouslySetInnerHTML={{ __html: themeInitializer }} />
+        <MotionEffects />
         {children}
       </body>
     </html>

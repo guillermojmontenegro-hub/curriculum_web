@@ -1,0 +1,627 @@
+PLAN DE NEGOCIOS — CONSULTORÍA INFORMÁTICA PARA PEQUEÑOS NEGOCIOS
+Versión inicial: julio de 2026
+
+
+1. RESUMEN EJECUTIVO
+
+La consultoría ayuda a pequeños negocios a ordenar sus procesos informáticos sin obligarlos a realizar grandes inversiones iniciales. Una parte central del enfoque consiste en encontrar nuevos usos para el hardware existente, extender su vida útil e incorporar equipos reacondicionados cuando resulte conveniente. El software se adapta a la capacidad disponible siempre que sea seguro y sostenible, en lugar de exigir renovaciones de equipos por defecto. Así se busca maximizar el valor de la infraestructura instalada, reducir costos y disminuir el impacto ambiental asociado a compras y descartes innecesarios.
+
+La promesa comercial no debe ser “vender tecnología”, sino lograr resultados concretos:
+
+- Menos carga manual y menos errores.
+- Información del negocio unificada y accesible.
+- Mayor control sobre clientes, ventas, tareas, stock y documentos.
+- Copias de seguridad, permisos y continuidad operativa.
+- Automatización e inteligencia artificial cuando generen un beneficio medible.
+- Inversión gradual, priorizada según impacto y presupuesto.
+
+El modelo de ingresos tendrá tres componentes:
+
+1. Diagnósticos iniciales pagos y accesibles.
+2. Proyectos de implementación cobrados por alcance e hitos.
+3. Planes mensuales de mantenimiento y mejora continua.
+
+
+2. CLIENTE IDEAL
+
+Prioridad alta:
+
+- Comercios con stock, ventas o administración mediante varias planillas.
+- Estudios profesionales y oficinas que dependen de WhatsApp, email y archivos sueltos.
+- Empresas de servicios con tareas repetitivas, agenda, seguimiento de clientes o presupuestos.
+- Pequeños talleres, distribuidores y emprendimientos que crecieron sin ordenar sus sistemas.
+- Negocios con entre 2 y 30 personas, donde el dueño todavía concentra gran parte de la información.
+
+Señales de una buena oportunidad:
+
+- “Solo una persona sabe dónde está todo”.
+- “Tenemos varias planillas con datos distintos”.
+- “Si se rompe esa computadora, perdemos información”.
+- “Copiamos los mismos datos en varios lugares”.
+- “No sabemos con rapidez cuánto vendimos, qué falta o qué está pendiente”.
+- “Compramos programas, pero no se adaptan a cómo trabajamos”.
+- “Queremos usar IA, pero no sabemos dónde tendría sentido”.
+
+Clientes que no conviene tomar inicialmente:
+
+- Proyectos sin un responsable disponible del lado del cliente.
+- Clientes que se niegan a realizar backups o prácticas mínimas de seguridad.
+- Trabajos críticos 24/7 sin presupuesto para infraestructura y soporte adecuados.
+- Solicitudes con alcance indefinido y precio cerrado sin diagnóstico previo.
+- Clientes que esperan que la IA reemplace controles humanos en procesos sensibles.
+
+
+3. POSICIONAMIENTO Y MENSAJE DE VENTA
+
+Posicionamiento recomendado:
+
+“Mejoro los procesos informáticos de pequeños negocios aprovechando la tecnología que ya tienen. Unifico información, automatizo tareas y desarrollo herramientas a medida, con seguridad y una inversión gradual.”
+
+Mensajes principales:
+
+- Empezamos por lo que ya tenés.
+- Primero resolvemos el problema más costoso o repetitivo.
+- Cada etapa debe producir una mejora visible.
+- El negocio conserva el control de sus datos.
+- La IA es una herramienta, no el producto ni una promesa vacía.
+
+Diferenciadores:
+
+- Experiencia senior en software, mobile, web, automatización e IA.
+- Capacidad para trabajar con hardware existente o reacondicionado.
+- Soluciones adaptadas al proceso real, no al revés.
+- Implementación por etapas para reducir riesgo financiero y operativo.
+- Documentación y capacitación para evitar dependencia innecesaria.
+
+
+3.1. PRINCIPIO DE HARDWARE CON SEGUNDA VIDA Y SOFTWARE ADAPTATIVO
+
+La reutilización no significa mantener cualquier equipo a cualquier costo. Significa evaluar su capacidad real y asignarle el uso de mayor valor que todavía pueda cumplir de manera segura, confiable y eficiente.
+
+Posibles estrategias:
+
+- Mantener el equipo en su función actual con mejoras de configuración, memoria o almacenamiento.
+- Reasignarlo a una tarea más liviana: terminal, puesto de consulta, pantalla de información, estación de carga de datos, backup, monitoreo, pruebas o automatización local.
+- Adaptar el software para consumir menos recursos, trabajar desde navegador, procesar por lotes o separar tareas pesadas en otro equipo.
+- Combinar hardware existente con componentes o equipos reacondicionados.
+- Donar, reutilizar piezas o enviar a reciclado responsable cuando ya no sea seguro o económicamente razonable conservarlo.
+
+Cada decisión debe comparar:
+
+- Seguridad y disponibilidad de actualizaciones.
+- Rendimiento necesario y experiencia de usuario.
+- Estado físico, confiabilidad y repuestos.
+- Consumo energético y horas de uso.
+- Costo de adaptación, mantenimiento y soporte frente al reemplazo.
+- Vida útil adicional razonable y riesgo operativo.
+- Borrado seguro de datos y disposición final responsable.
+
+Indicadores para documentar sin exagerar beneficios:
+
+- Equipos mantenidos, mejorados o reasignados.
+- Compras evitadas o postergadas.
+- Inversión evitada o reducida.
+- Vida útil adicional estimada.
+- Equipos retirados con borrado y destino responsable.
+
+No atribuir reducciones de emisiones o residuos específicas sin una metodología verificable. El argumento ambiental debe apoyarse en decisiones y activos documentados, no en promesas generales.
+
+
+4. DISEÑO DE LA OFERTA COMERCIAL
+
+4.1. Conversación de encuadre — gratuita
+
+Duración: 15 a 20 minutos por WhatsApp, Telegram o videollamada.
+
+Objetivo: determinar si existe un problema concreto, si el negocio encaja con el servicio y si vale la pena realizar el diagnóstico pago.
+
+Esta conversación no incluye auditoría, diseño de solución ni presupuesto definitivo. Solo debe responder:
+
+- ¿Qué quiere mejorar el cliente?
+- ¿Cuántas personas y equipos están involucrados?
+- ¿Qué herramientas utiliza hoy?
+- ¿El problema genera pérdida de tiempo, dinero, control o seguridad?
+- ¿Quién toma la decisión y cuál es el plazo esperado?
+
+Resultado: invitación al Diagnóstico Inicial o derivación si el trabajo no encaja.
+
+
+4.2. Diagnóstico Inicial — pago, económico y con precio fijo
+
+Nombre sugerido: “Mapa de Mejora Informática”.
+
+El diagnóstico debe tener un costo bajo, pero no ser gratuito. Cobrarlo filtra consultas sin intención real, reconoce el trabajo profesional y permite entregar valor aunque el cliente luego no implemente el proyecto.
+
+Precio de lanzamiento recomendado:
+
+- Primeros 10 clientes: equivalente a USD 40–50, facturado en pesos.
+- Precio normal luego de validar el servicio: equivalente a USD 60–100, facturado en pesos.
+- Para operaciones más complejas o con visita extensa: cotización especial.
+
+Los valores en dólares funcionan únicamente como referencia interna para conservar consistencia. La propuesta y la factura deben expresarse en pesos, con precio y vigencia claramente indicados. Revisar el tratamiento impositivo y contractual con un contador.
+
+Incentivo recomendado:
+
+Descontar el 100 % del diagnóstico del precio de una implementación superior al equivalente de USD 500 si se contrata dentro de los 15 días posteriores a la propuesta. Así el diagnóstico sigue siendo pago, pero el cliente siente que la inversión inicial se aprovecha por completo.
+
+Alcance estándar:
+
+- Reunión de 60 a 90 minutos.
+- Relevamiento general de equipos, programas, archivos y accesos.
+- Mapa simplificado de uno o dos procesos prioritarios.
+- Identificación de riesgos básicos de seguridad y continuidad.
+- Detección de tareas repetitivas o candidatas a automatización.
+- Recomendaciones para reutilizar hardware existente.
+- Lista priorizada de mejoras: urgente, próxima y futura.
+- Propuesta de implementación en tres alternativas.
+
+Entregable:
+
+Documento breve de 3 a 6 páginas, comprensible para una persona no técnica. Debe mostrar el problema, el impacto, la solución recomendada, qué se reutilizará, qué habría que adquirir, plazos, riesgos y precio.
+
+El diagnóstico se cobra por adelantado al reservar la reunión.
+
+
+4.3. Propuesta de implementación
+
+Presentar siempre tres alternativas. Esto evita que la conversación quede reducida a “aceptar o rechazar” un único precio.
+
+Opción A — Esencial:
+
+- Resuelve el problema principal.
+- Reutiliza la mayor cantidad posible de infraestructura.
+- Evita funciones accesorias.
+- Tiene el menor tiempo y costo de entrada.
+
+Opción B — Productiva, recomendada:
+
+- Resuelve el problema principal.
+- Unifica la información prioritaria.
+- Incluye automatizaciones de mayor retorno.
+- Deja una base preparada para crecer.
+
+Opción C — Integrada:
+
+- Incluye más procesos y áreas.
+- Agrega tableros, integraciones o asistencia con IA.
+- Incorpora mayor automatización, monitoreo y capacitación.
+
+Bandas orientativas para comenzar a vender:
+
+- Mejora puntual o “quick win”: USD 250–700 equivalentes en pesos.
+- Sistema básico o automatización de un proceso: USD 800–2.200 equivalentes.
+- Solución integrada de varias etapas: USD 2.000–6.000 o más equivalentes.
+
+Estas bandas no son una lista pública de precios ni sustituyen el diagnóstico. Deben calibrarse después de los primeros diez proyectos según horas reales, complejidad, costos, conversiones y margen obtenido.
+
+
+5. CÓMO CALCULAR Y PRESENTAR EL PRECIO FINAL
+
+Calcular internamente el proyecto de esta manera:
+
+Precio = horas estimadas × tarifa interna + costos externos + contingencia + margen de coordinación.
+
+Tarifa interna inicial sugerida:
+
+- USD 30–45 equivalentes por hora para desarrollo, integración y consultoría.
+- Usar una tarifa mayor para urgencias, trabajo fuera de horario o tareas de alto riesgo.
+- La tarifa es una herramienta interna; al cliente se le presenta un precio por resultado y alcance.
+
+Contingencia:
+
+- 10 % en trabajos repetibles y bien definidos.
+- 15–20 % cuando existen sistemas antiguos, datos desordenados o terceros involucrados.
+- Si la incertidumbre supera ese nivel, dividir el proyecto en una etapa de prueba paga.
+
+La propuesta debe indicar:
+
+- Problema y resultado esperado.
+- Alcance incluido.
+- Exclusiones.
+- Entregables.
+- Cronograma e hitos.
+- Responsabilidades del cliente.
+- Precio, impuestos y vigencia de 7 días.
+- Forma de pago.
+- Criterio de aceptación.
+- Garantía y mantenimiento.
+- Tratamiento de cambios de alcance.
+- Propiedad y acceso a datos, código, cuentas y documentación.
+
+Regla fundamental: una función nueva o un cambio de alcance requiere una estimación adicional. No debe absorberse silenciosamente dentro del precio cerrado.
+
+
+6. FORMA DE COBRO
+
+Para diagnósticos:
+
+- 100 % por adelantado para reservar la fecha.
+- Enviar confirmación, alcance y comprobante.
+
+Para proyectos de hasta USD 500 equivalentes:
+
+- 50 % al aceptar la propuesta.
+- 50 % antes de la puesta en producción o entrega definitiva.
+
+Para proyectos mayores:
+
+- 40 % de anticipo al aceptar.
+- 30 % al entregar el prototipo o completar el hito intermedio.
+- 30 % antes de la puesta en producción y entrega final.
+
+Para proyectos largos:
+
+- Dividir por etapas mensuales o quincenales.
+- Cada etapa debe tener precio, entregable y aceptación propios.
+- No acumular más de 30 días de trabajo sin facturar.
+
+Para hardware y licencias:
+
+- El cliente compra directamente cuando sea posible.
+- Si la consultoría debe comprar, cobrar el 100 % del costo antes de realizar la compra.
+- Cobrar selección, configuración, traslado e instalación como servicio separado.
+- Informar por escrito si un equipo es usado o reacondicionado y cuál es su garantía.
+- No financiar hardware con fondos propios.
+
+Medios de cobro recomendados:
+
+1. Transferencia bancaria: opción preferida para proyectos, por trazabilidad y menor costo operativo.
+2. Link de Pago de Mercado Pago: alternativa cómoda para cobrar el diagnóstico desde WhatsApp o redes sociales y permitir distintos medios de pago.
+3. Suscripción o débito recurrente: útil más adelante para planes de mantenimiento, siempre que las comisiones y condiciones vigentes resulten convenientes.
+
+Mercado Pago informa que el Link de Pago puede utilizarse en chats y redes sin integración técnica, y que ofrece herramientas para cobros recurrentes. Las comisiones y plazos de acreditación cambian; revisarlos antes de fijar cada precio y contemplarlos dentro del margen, sin improvisar recargos luego de enviar la propuesta.
+
+Facturación:
+
+- Emitir la factura correspondiente a cada cobro o hito.
+- Si se opera como monotributista, ARCA indica que las operaciones deben documentarse mediante factura electrónica y ofrece “Comprobantes en línea” y el facturador móvil.
+- Confirmar categoría, actividad, Ingresos Brutos, tratamiento de moneda, retenciones y demás obligaciones con un contador matriculado.
+
+Política de mora sugerida:
+
+- El trabajo se inicia cuando se acredita el anticipo.
+- Un hito impago suspende el siguiente hito y sus fechas.
+- Las credenciales, documentación y datos del cliente nunca deben retenerse como mecanismo de presión.
+
+
+7. GARANTÍA Y MANTENIMIENTO
+
+7.1. Garantía de implementación
+
+Incluir 30 días de garantía correctiva desde la aceptación. Cubre errores respecto del alcance aprobado. No cubre nuevas funciones, cambios de criterio, fallas de servicios externos, mal uso, hardware dañado ni modificaciones realizadas por terceros.
+
+
+7.2. Mantenimiento mensual
+
+El mantenimiento debe ser opcional pero ofrecido en todas las propuestas. Se cobra por adelantado y comienza al finalizar la garantía.
+
+Plan Esencial — referencia USD 60–100 equivalentes por mes:
+
+- Hasta 2 horas mensuales.
+- Revisión mensual de backups y actualizaciones acordadas.
+- Soporte remoto en horario laboral.
+- Respuesta inicial dentro de 2 días hábiles.
+- Informe breve mensual.
+
+Plan Continuidad — referencia USD 140–240 equivalentes por mes:
+
+- Hasta 5 horas mensuales.
+- Monitoreo básico, backups, actualizaciones y soporte a usuarios clave.
+- Respuesta inicial dentro de 1 día hábil.
+- Revisión trimestral de mejoras.
+
+Plan Gestionado — referencia desde USD 300 equivalentes por mes:
+
+- Bolsa de 10 horas o más.
+- Seguimiento proactivo de sistemas y automatizaciones.
+- Respuesta prioritaria dentro de 4 a 8 horas laborales.
+- Capacitación breve, revisión mensual y planificación trimestral.
+
+Reglas recomendadas:
+
+- Contratación mínima inicial de 3 meses.
+- Las horas no utilizadas vencen al cierre del mes o se permite trasladar como máximo el 25 % al mes siguiente.
+- Las horas adicionales se autorizan antes de trabajarse y se facturan aparte.
+- “Tiempo de respuesta” no significa “tiempo de resolución”.
+- Licencias, hosting, dominios, servicios de IA, repuestos y visitas se cotizan por separado.
+- Emergencias fuera de horario llevan un recargo previamente acordado.
+- Cambios grandes o módulos nuevos se presupuestan como proyecto.
+
+El mantenimiento debe separar tres conceptos:
+
+- Correctivo: resolver fallas del sistema existente.
+- Preventivo: backups, actualizaciones, revisión de capacidad y seguridad.
+- Evolutivo: nuevas funciones y automatizaciones. Solo se incluye hasta el límite de horas contratado.
+
+
+8. MEJOR ESTRATEGIA DE PUBLICIDAD Y CAPTACIÓN
+
+La publicidad inicial debe buscar confianza local y conversaciones calificadas. No conviene comenzar gastando mucho en anuncios amplios: primero hay que validar el mensaje, el diagnóstico y la conversión mediante contactos directos y recomendaciones.
+
+
+8.1. Canal principal — referencias y alianzas
+
+Crear una red de aliados que ya tenga la confianza del pequeño negocio:
+
+- Contadores y estudios contables.
+- Técnicos de reparación y vendedores de hardware reacondicionado.
+- Consultores administrativos.
+- Diseñadores web y agencias que no desarrollen sistemas internos.
+- Cámaras de comercio, centros comerciales y espacios de emprendedores.
+- Proveedores de internet, cámaras de seguridad o puntos de venta.
+
+Propuesta para aliados:
+
+- Reunión breve para explicar qué problemas se resuelven.
+- Tarjeta digital con enlace a /consultoria y WhatsApp.
+- Diagnóstico preferencial para sus clientes.
+- Comisión de referencia del 5–10 % del primer proyecto, o intercambio de referencias, siempre documentado y sin afectar la objetividad profesional.
+
+Objetivo de lanzamiento: contactar personalmente a 10 aliados y 30 contactos profesionales o comerciales, con mensajes individuales y sin spam.
+
+
+8.2. WhatsApp Business — canal de conversión
+
+Usar WhatsApp Business, no solo la aplicación personal. La plataforma está diseñada para pequeños negocios y permite presentar servicios, precios orientativos, mensajes de bienvenida y respuestas cuando no se está disponible.
+
+Configurar:
+
+- Perfil profesional completo.
+- Horario de atención.
+- Descripción alineada con la página de consultoría.
+- Servicios: “Conversación inicial”, “Mapa de Mejora Informática” y “Mantenimiento”.
+- Mensaje automático de bienvenida.
+- Respuestas rápidas para precio del diagnóstico, alcance y reserva.
+- Etiquetas: consulta nueva, calificado, diagnóstico pago, propuesta, cliente y mantenimiento.
+
+Mensaje inicial sugerido:
+
+“Hola, gracias por contactarme. Para orientarte, contame qué tipo de negocio tenés, cuántas personas trabajan y qué proceso informático te está haciendo perder más tiempo o control. Con esa información coordinamos una conversación breve sin costo.”
+
+
+8.3. Google y búsqueda local
+
+Crear un Perfil de Negocio de Google solo si la actividad cumple sus condiciones de elegibilidad, especialmente si se visita presencialmente a clientes. Google permite perfiles de área de servicio para negocios que atienden en la ubicación del cliente y permite ocultar el domicilio particular.
+
+Acciones:
+
+- Definir con precisión las localidades atendidas.
+- Enlazar la página /consultoria.
+- Cargar WhatsApp/teléfono, horario, servicios y descripción.
+- Publicar fotos reales de equipos, instalaciones o tableros sin exponer datos.
+- Solicitar reseñas a cada cliente satisfecho.
+- Responder todas las reseñas.
+
+Si el servicio es exclusivamente remoto y no existe contacto presencial con clientes, revisar las reglas antes de crear el perfil, porque Google limita estos perfiles a negocios con atención presencial o desplazamiento hacia el cliente.
+
+
+8.4. Contenido que vende confianza
+
+Publicar una pieza útil por semana, reutilizada en LinkedIn, página web, WhatsApp Status y grupos relevantes:
+
+- “Cinco señales de que tu negocio depende demasiado de una planilla”.
+- “Cómo saber si necesitás comprar una computadora o solo mejorar la actual”.
+- “Qué información perderías si hoy falla tu equipo principal”.
+- “Tres tareas administrativas que se pueden automatizar sin cambiar todo”.
+- “Dónde sirve la IA en un pequeño negocio y dónde no”.
+- Casos antes/después con tiempo ahorrado, errores reducidos o información recuperada.
+
+Cada publicación debe terminar con una sola acción:
+
+“Escribime por WhatsApp y coordinamos una conversación inicial de 15 minutos.”
+
+No publicar contenido excesivamente técnico. El cliente compra claridad, control, ahorro de tiempo y continuidad, no nombres de frameworks.
+
+
+8.5. Casos de éxito y reseñas
+
+Los primeros proyectos deben generar evidencia comercial.
+
+Registrar, con autorización:
+
+- Situación inicial.
+- Solución aplicada.
+- Hardware reutilizado.
+- Tiempo o errores reducidos.
+- Inversión evitada.
+- Testimonio del dueño.
+
+Ofrecer un precio de lanzamiento a cambio de feedback honesto y autorización para publicar un caso anonimizado. No condicionar el descuento a una reseña positiva.
+
+
+8.6. Publicidad paga — después de validar la oferta
+
+Comenzar anuncios solo después de cerrar al menos tres diagnósticos de manera orgánica y entender qué mensaje convierte.
+
+Prueba 1 — Meta con destino WhatsApp:
+
+- Segmentación geográfica sobre las localidades realmente atendidas.
+- Mensaje basado en un problema concreto, no en “transformación digital”.
+- Presupuesto de prueba: equivalente a USD 5–10 diarios durante 14 días.
+- Dos anuncios: pérdida de información frente a tareas manuales.
+- Medir conversaciones calificadas y diagnósticos pagos, no clics ni “me gusta”.
+
+Prueba 2 — Google Search:
+
+- Palabras de intención alta: “consultoría informática para comercios”, “sistema para organizar negocio”, “automatizar tareas administrativas” y variantes locales.
+- Enviar a /consultoria, no a la página general del currículum.
+- Excluir búsquedas de empleo, cursos, soporte gratuito y descargas.
+- Comenzar con un área pequeña y aumentar solo si genera diagnósticos rentables.
+
+Criterio para mantener un anuncio:
+
+El costo de adquirir un cliente debe recuperarse con el diagnóstico y una fracción razonable del primer proyecto. Como guía inicial, no permitir que el costo comercial supere el 10–15 % del ingreso del primer proyecto.
+
+
+9. PROCESO COMERCIAL
+
+Embudo recomendado:
+
+1. Consulta recibida por WhatsApp, Telegram, email, recomendación o Google.
+2. Respuesta el mismo día hábil.
+3. Conversación de encuadre de 15–20 minutos.
+4. Envío de alcance y link de pago del diagnóstico.
+5. Diagnóstico y entrega del Mapa de Mejora.
+6. Presentación breve de tres alternativas de implementación.
+7. Seguimiento a las 48 horas y a los 7 días.
+8. Firma o aceptación formal, anticipo e inicio.
+9. Entregas por hitos con demostración.
+10. Aceptación, capacitación y comienzo de garantía.
+11. Oferta de mantenimiento.
+12. Solicitud de testimonio o referencia después de comprobar resultados.
+
+Registrar cada oportunidad en una planilla o CRM simple con:
+
+- Nombre y negocio.
+- Origen del contacto.
+- Problema principal.
+- Próxima acción y fecha.
+- Estado del diagnóstico.
+- Valor propuesto y resultado.
+- Motivo de pérdida.
+- Plan de mantenimiento ofrecido/aceptado.
+
+
+10. DOCUMENTOS Y CONTROLES NECESARIOS
+
+Preparar antes de vender:
+
+- Plantilla de conversación inicial.
+- Alcance y condiciones del Diagnóstico Inicial.
+- Plantilla del Mapa de Mejora Informática.
+- Plantilla de propuesta con tres alternativas.
+- Contrato u orden de trabajo.
+- Acta simple de aceptación por hito.
+- Política de cambios de alcance.
+- Acuerdo de confidencialidad cuando corresponda.
+- Formulario de inventario y accesos.
+- Procedimiento de backup antes de modificar sistemas.
+- Planilla de oportunidades y seguimiento.
+- Descripción de los tres planes de mantenimiento.
+
+Seguridad operativa:
+
+- Nunca pedir contraseñas por chat sin un procedimiento seguro.
+- Usar un gestor de contraseñas y autenticación de dos factores.
+- Crear cuentas nominales; evitar compartir usuarios administradores.
+- Realizar backup verificable antes de migraciones o cambios.
+- Definir por escrito quién es propietario de cuentas, datos, dominios y repositorios.
+- El cliente debe conservar acceso administrativo a sus activos.
+
+
+11. MÉTRICAS DEL NEGOCIO
+
+Medir mensualmente:
+
+- Consultas recibidas por canal.
+- Conversaciones iniciales realizadas.
+- Diagnósticos vendidos.
+- Conversión de conversación a diagnóstico.
+- Propuestas presentadas y aceptadas.
+- Ticket promedio de implementación.
+- Horas estimadas frente a horas reales.
+- Margen bruto por proyecto.
+- Clientes que contratan mantenimiento.
+- Ingreso mensual recurrente.
+- Tiempo de cobro.
+- Referencias y reseñas obtenidas.
+
+Objetivos razonables para los primeros 90 días:
+
+- 10 consultas calificadas por mes.
+- 4–6 conversaciones iniciales por mes.
+- 2–4 diagnósticos pagos por mes.
+- 1–2 implementaciones nuevas por mes.
+- Conversión de diagnóstico a implementación: 35 % o más.
+- Adhesión a mantenimiento: 50 % o más de los proyectos terminados.
+- Margen bruto objetivo: 50–65 %, después de hardware, licencias y terceros.
+
+
+12. PLAN DE LANZAMIENTO DE 90 DÍAS
+
+Días 1–15 — preparar:
+
+- Ajustar la página /consultoria con una explicación clara del diagnóstico pago.
+- Configurar WhatsApp Business.
+- Crear las plantillas comerciales y de diagnóstico.
+- Definir precios de lanzamiento, medios de cobro y condiciones.
+- Crear una planilla de seguimiento.
+- Preparar dos publicaciones y una tarjeta digital.
+
+Días 16–30 — vender de forma directa:
+
+- Contactar 30 personas de la red profesional de manera personalizada.
+- Presentarse ante 10 potenciales aliados.
+- Conseguir los primeros 2–3 diagnósticos pagos.
+- Registrar preguntas, objeciones y tiempo real dedicado.
+
+Días 31–60 — producir evidencia:
+
+- Completar las primeras implementaciones pequeñas.
+- Medir resultados antes/después.
+- Publicar el primer caso de éxito.
+- Solicitar reseñas y referencias.
+- Ajustar precio y alcance del diagnóstico.
+
+Días 61–90 — escalar con control:
+
+- Probar anuncios de bajo presupuesto con destino WhatsApp.
+- Crear o mejorar el Perfil de Negocio de Google si corresponde.
+- Formalizar alianzas que hayan generado oportunidades.
+- Convertir proyectos terminados a mantenimiento mensual.
+- Revisar métricas y abandonar canales que producen consultas sin intención de compra.
+
+
+13. GUION COMERCIAL BREVE
+
+Texto para difusión:
+
+“¿Tu negocio depende de planillas dispersas, tareas manuales o una computadora que nadie se anima a tocar? Te ayudo a ordenar la información, automatizar procesos y mejorar la seguridad aprovechando primero el hardware que ya tenés. Empezamos con un diagnóstico de bajo costo y recibís un plan concreto con opciones, precio final y etapas de implementación.”
+
+Respuesta ante “¿cuánto cuesta?”:
+
+“El precio depende del proceso y de lo que podamos reutilizar. Primero hacemos una conversación breve sin costo. Si el caso encaja, el diagnóstico tiene un precio fijo y accesible; después recibís tres alternativas de implementación con alcance, plazo y precio final. Si avanzás con el proyecto, descuento el diagnóstico del total.”
+
+Respuesta ante “solo quiero un presupuesto”:
+
+“Para darte un precio responsable necesito revisar el proceso, los equipos y la información involucrada. El diagnóstico evita presupuestar de más o descubrir costos ocultos después. Además, te queda un mapa de mejoras útil aunque decidas implementar más adelante.”
+
+
+14. DECISIONES COMERCIALES RECOMENDADAS
+
+- Mantener gratuita únicamente la conversación de encuadre.
+- Cobrar el diagnóstico por adelantado.
+- Descontar el diagnóstico solo cuando se contrata una implementación mínima definida.
+- Presentar tres alternativas, marcando una como recomendada.
+- Cobrar implementaciones por hitos y nunca comenzar sin anticipo.
+- No financiar hardware.
+- Incluir 30 días de garantía correctiva.
+- Ofrecer mantenimiento en cada cierre.
+- Cobrar mantenimiento mensual por adelantado.
+- Publicitar resultados de negocio y no tecnologías.
+- Priorizar referencias, alianzas, WhatsApp y casos de éxito antes de escalar anuncios.
+- Revisar precios cada mes durante el lanzamiento y luego trimestralmente.
+
+
+15. FUENTES Y REFERENCIAS CONSULTADAS
+
+- Google Business Profile — perfiles para negocios con área de servicio, visibilidad en Search/Maps y reseñas:
+  https://support.google.com/business/answer/7039811
+  https://support.google.com/business/answer/9157481
+  https://support.google.com/business/answer/3038177
+
+- WhatsApp Business — aplicación orientada a pequeños negocios, presentación de servicios y gestión de conversaciones:
+  https://whatsappbusiness.com/products/business-app/
+
+- Mercado Pago — Link de Pago, cobros por chat/redes y suscripciones:
+  https://www.mercadopago.com.ar/developers/es/docs/getting-started
+  https://www.mercadopago.com.ar/developers/es/docs/online-payments
+
+- ARCA — facturación electrónica para monotributistas:
+  https://www.arca.gob.ar/facturacion/monotributo/comprobantes.asp
+  https://www.arca.gob.ar/facturacion/monotributo/modalidades.asp
+
+
+NOTA FINAL
+
+Los rangos de precios son una base comercial para validar el servicio, no una tarifa obligatoria. Deben adaptarse al mercado, la complejidad, los costos reales y la carga fiscal. Antes de lanzar, conviene revisar con un contador la forma de facturación, impuestos, moneda, condiciones de cobro y contratos aplicables en Argentina.

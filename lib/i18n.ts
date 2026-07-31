@@ -10,6 +10,7 @@ type Dictionary = {
     skills: string;
     contact: string;
     articles: string;
+    consulting: string;
   };
   home: {
     heroKicker: string;
@@ -115,6 +116,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       skills: "Skills",
       contact: "Contacto",
       articles: "Leer articulos",
+      consulting: "Consultoría",
     },
     home: {
       heroKicker: "Perfil profesional",
@@ -244,6 +246,7 @@ const dictionaries: Record<Locale, Dictionary> = {
       skills: "Skills",
       contact: "Contact",
       articles: "Read articles",
+      consulting: "Consulting",
     },
     home: {
       heroKicker: "Professional profile",

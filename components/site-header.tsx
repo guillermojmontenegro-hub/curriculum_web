@@ -102,10 +102,16 @@ export function SiteHeader({ locale }: SiteHeaderProps) {
             </Link>
             <Link
               href={withLocale("/articulos", locale)}
-              className="nav-cta"
               onClick={closeSidebar}
             >
               {copy.nav.articles}
+            </Link>
+            <Link
+              href={withLocale("/consultoria", locale)}
+              className="nav-cta"
+              onClick={closeSidebar}
+            >
+              {copy.nav.consulting}
             </Link>
           </nav>
 

@@ -8,7 +8,11 @@ import { formatArticleDate } from "@/lib/formatters";
 import { getDictionary, getLocale, withLocale } from "@/lib/i18n";
 import { getProfile } from "@/lib/profile";
 
-function ContactIcon({ type }: { type: "email" | "linkedin" | "location" }) {
+function ContactIcon({
+  type,
+}: {
+  type: "email" | "linkedin" | "location" | "telegram" | "whatsapp";
+}) {
   if (type === "email") {
     return (
       <span className="contact-icon" aria-hidden="true">
@@ -24,6 +28,26 @@ function ContactIcon({ type }: { type: "email" | "linkedin" | "location" }) {
       <span className="contact-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" focusable="false">
           <path d="M6.8 8.37A1.57 1.57 0 1 1 6.82 5.23 1.57 1.57 0 0 1 6.8 8.37m1.3 2.13v8.25H5.5V10.5zm4.11 0h2.49v1.13h.04c.35-.66 1.2-1.36 2.47-1.36 2.65 0 3.14 1.74 3.14 4v4.48h-2.59v-3.97c0-.95-.02-2.17-1.32-2.17-1.32 0-1.52 1.03-1.52 2.1v4.04h-2.59V10.5z" />
+        </svg>
+      </span>
+    );
+  }
+
+  if (type === "whatsapp") {
+    return (
+      <span className="contact-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M12 3.5a8.5 8.5 0 0 0-7.28 12.89L3.5 20.5l4.23-1.18A8.5 8.5 0 1 0 12 3.5m0 1.5a7 7 0 0 1 5.94 10.7 7 7 0 0 1-9.42 2.43l-.35-.2-2.5.7.72-2.42-.22-.37A7 7 0 0 1 12 5m-3.3 3.5c-.18 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.65.57.25 1.02.4 1.37.51.58.18 1.1.15 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28l-1.6-.79c-.24-.1-.42-.16-.6.1-.18.27-.68.8-.84.96-.16.18-.32.2-.58.07-.27-.13-1.13-.42-2.15-1.35-.8-.71-1.33-1.6-1.49-1.87-.16-.27-.02-.4.12-.53.12-.12.27-.3.4-.45.13-.15.18-.26.27-.43.09-.18.05-.33-.02-.46l-.75-1.8c-.2-.48-.42-.42-.58-.43z" />
+        </svg>
+      </span>
+    );
+  }
+
+  if (type === "telegram") {
+    return (
+      <span className="contact-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="m20.7 4.2-2.6 15.1c-.2 1.1-.8 1.4-1.6.9l-4.4-3.2-2.1 2c-.23.23-.42.42-.87.42l.3-4.3 7.83-7.08c.34-.3-.07-.47-.53-.16L7.05 13.98l-4.16-1.3c-.9-.28-.92-.9.19-1.34L19.35 5.1c.75-.28 1.4.18 1.35 1.1z" />
         </svg>
       </span>
     );
@@ -256,6 +280,36 @@ export default async function HomePage({
                 {profile.contact.email}
               </a>
             </div>
+            {profile.contact.whatsapp ? (
+              <div className="contact-item">
+                <span className="contact-label-with-icon">
+                  <ContactIcon type="whatsapp" />
+                  <span className="contact-label">WhatsApp</span>
+                </span>
+                <a
+                  href={`https://wa.me/${profile.contact.whatsapp.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {profile.contact.whatsapp}
+                </a>
+              </div>
+            ) : null}
+            {profile.contact.telegram ? (
+              <div className="contact-item">
+                <span className="contact-label-with-icon">
+                  <ContactIcon type="telegram" />
+                  <span className="contact-label">Telegram</span>
+                </span>
+                <a
+                  href={`https://t.me/${profile.contact.telegram}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  @{profile.contact.telegram}
+                </a>
+              </div>
+            ) : null}
             {profile.contact.linkedin ? (
               <div className="contact-item">
                 <span className="contact-label-with-icon">

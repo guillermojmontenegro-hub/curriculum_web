@@ -20,6 +20,8 @@ export type ContactData = {
   email: string;
   location: string;
   phone?: string;
+  whatsapp?: string;
+  telegram?: string;
   linkedin?: string;
   github?: string;
 };

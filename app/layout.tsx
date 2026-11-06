@@ -1,49 +1,50 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import { MotionEffects } from "@/components/motion-effects";
 import "./globals.css";
+import "./portfolio.css";
 
 const themeInitializer = `
 (() => {
   const storageKey = "theme-preference";
   const root = document.documentElement;
-  const storedTheme = window.localStorage.getItem(storageKey);
-  const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
-    ? "light"
-    : "dark";
+  let storedTheme;
+  try { storedTheme = window.localStorage.getItem(storageKey); } catch {}
   const theme =
-    storedTheme === "light" || storedTheme === "dark" ? storedTheme : systemTheme;
+    storedTheme === "light" || storedTheme === "dark" ? storedTheme : "light";
 
   root.dataset.theme = theme;
   root.style.colorScheme = theme;
 })();
 `;
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const inter = localFont({
+  src: "../public/assets/fonts/inter-latin.woff2",
+  weight: "100 900",
+  display: "swap",
   variable: "--font-body",
 });
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["300", "400"],
+const roboto = localFont({
+  src: "../public/assets/fonts/roboto-latin.woff2",
+  weight: "100 900",
+  display: "swap",
   variable: "--font-headline",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+const spaceGrotesk = localFont({
+  src: "../public/assets/fonts/space-grotesk-latin.woff2",
+  weight: "300 700",
+  display: "swap",
   variable: "--font-label",
 });
 
 export const metadata: Metadata = {
-  title: "Guillermo Montenegro | CV",
+  title: "Guillermo Montenegro | Software, Mobile & AI",
   description:
-    "Perfil profesional y articulos técnicos de Guillermo Montenegro sobre IA aplicada, software y producto.",
+    "Desarrollo de software desde 2010. Android, iOS, web full stack, backend Java y Python, IA aplicada y automatización. Conocé mi trabajo y mi recorrido.",
   openGraph: {
-    title: "Guillermo Montenegro | CV",
+    title: "Guillermo Montenegro | Software, Mobile & AI",
     description:
       "Perfil profesional, experiencia y articulos técnicos escritos por Guillermo Montenegro.",
     type: "website",

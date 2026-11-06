@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 import { MotionEffects } from "@/components/motion-effects";
 import "./globals.css";
 import "./portfolio.css";
@@ -18,22 +18,24 @@ const themeInitializer = `
 })();
 `;
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const inter = localFont({
+  src: "../public/assets/fonts/inter-latin.woff2",
+  weight: "100 900",
+  display: "swap",
   variable: "--font-body",
 });
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["300", "400"],
+const roboto = localFont({
+  src: "../public/assets/fonts/roboto-latin.woff2",
+  weight: "100 900",
+  display: "swap",
   variable: "--font-headline",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+const spaceGrotesk = localFont({
+  src: "../public/assets/fonts/space-grotesk-latin.woff2",
+  weight: "300 700",
+  display: "swap",
   variable: "--font-label",
 });
 

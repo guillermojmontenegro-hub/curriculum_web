@@ -1,7 +1,7 @@
 {
   "name": "Guillermo J. Montenegro",
-  "headline": "Mobile, Web Full Stack y AI Engineer con más de 15 años de experiencia",
-  "summary": "Desarrollador senior orientado a roles Mobile, Web Full Stack y AI Engineer. Tengo experiencia en desarrollo mobile con Android e iOS, desarrollo web con React y Next.js, backend en Python e integración de soluciones basadas en IA. Adopté temprano herramientas de IA como asistentes de código y aceleradores de workflow, y esa práctica evolucionó hacia trabajo concreto con LLMs, agentes, tool calling, prompting y automatización aplicada.",
+  "headline": "Senior Software Engineer · Mobile, Web & AI",
+  "summary": "Soy Guillermo. Desarrollo software desde 2010: aplicaciones Android e iOS, productos web y servicios en Java y Python. En los últimos años llevé esa experiencia a la IA aplicada, los agentes y la automatización de procesos.",
   "skills": [
     "LLMs",
     "Agents",
@@ -31,7 +31,25 @@
     "Docker",
     "CI/CD",
     "Azure",
-    "GCP"
+    "GCP",
+    "Power Automate",
+    "FastAPI",
+    "Agent Skills",
+    "Langfuse",
+    "Vertex AI",
+    "Hugging Face",
+    "Fine Tuning",
+    "LoRA",
+    "Codex",
+    "Claude Code",
+    "OpenCode",
+    "Room",
+    "Hilt",
+    "Retrofit",
+    "Coroutines",
+    "Flow",
+    "SwiftUI",
+    "UIKit"
   ],
   "experience": [
     {
@@ -39,10 +57,9 @@
       "role": "Desarrollador T3 Full Stack / AI Engineer",
       "period": "Mar 2025 - Mar 2026",
       "highlights": [
-        "Participé en el diseño y desarrollo de una aplicación web orientada a negocio, desde la definición funcional hasta su entrega.",
-        "Trabajo realizado como AI Engineer, AI Researcher y Senior Software Engineer en investigación aplicada con LLMs, agentes y ecosistema de herramientas.",
-        "Diseño de workflows asistidos por IA y prototipos orientados a integración de modelos, orquestación y comportamiento determinístico.",
-        "Implementación de automatizaciones, herramientas internas y prácticas de ingeniería para robustecer ciclos de desarrollo y operación."
+        "Continuidad de la relación laboral tras la adquisición de Mobile Computing por Grid Dynamics en marzo de 2025.",
+        "Diseño y desarrollo de una aplicación web de negocio, desde la definición funcional hasta la entrega.",
+        "Investigación aplicada con LLMs, agentes y orquestación de herramientas; prototipos y automatizaciones para el desarrollo de software."
       ]
     },
     {
@@ -50,11 +67,9 @@
       "role": "Desarrollador Sr Full Stack / AI Engineer",
       "period": "Jun 2013 - Mar 2025",
       "highlights": [
-        "Más de una década de trabajo continuo en desarrollo mobile con Android, iOS y tecnologías multiplataforma.",
-        "Diseño y desarrollo de aplicaciones móviles y web para entornos corporativos y de investigación.",
-        "Integración entre apps mobile, APIs, backends de soporte y front ends web asociados.",
-        "Trabajo realizado como AI Engineer en exploración, evaluación e incorporación de herramientas de IA para productividad, automatización y nuevos flujos de desarrollo.",
-        "Construcción de soluciones escalables, mantenibles y orientadas a operación real de producto."
+        "Creé el área de Investigación y Desarrollo y la lideré durante cuatro años, con foco en IA aplicada a ingeniería de software y dirección técnica.",
+        "Desarrollo Android e iOS para Walmart, Bagó, Banelco/Prisma, HSBC y Samsung.",
+        "Backend Java para AB InBev y Sociedad Rural Argentina; integración con aplicaciones mobile y front ends web. React para Sociedad Rural Argentina."
       ]
     },
     {
@@ -70,7 +85,7 @@
     {
       "company": "Bosch Argentina Industrial",
       "role": "Auditor Sr.",
-      "period": "Jun 2001 - Dec 2009",
+      "period": "Jun 2001 - Dic 2009",
       "highlights": [
         "Auditor interno y control de calidad senior.",
         "Liderazgo de equipo de auditores junior.",
@@ -79,12 +94,9 @@
     }
   ],
   "projects": [
-    "AIDZero: runtime modular de agentes LLM en Python con tools y gateway MCP",
-    "Sitio personal de currículum y biblioteca técnica en Next.js, React y TypeScript",
-    "Aplicaciones Android nativas con Kotlin, Jetpack Compose y arquitectura mantenible",
-    "Aplicaciones iOS con Swift, UIKit y SwiftUI",
-    "Front ends web con React, Next.js y TypeScript",
-    "Backends y automatizaciones en Python para IA y productos mobile/web"
+    "AIDZero: runtime modular de agentes LLM en Python con herramientas locales, adaptadores de modelos y gateway MCP",
+    "Sitio personal y biblioteca técnica en Next.js, React y TypeScript",
+    "Proyectos corporativos Android, iOS, React y backend Java para Walmart, Bagó, AB InBev, Sociedad Rural Argentina, Banelco/Prisma, HSBC y Samsung"
   ],
   "education": [
     {
@@ -99,8 +111,14 @@
     }
   ],
   "languages": [
-    { "name": "Español", "level": "Nativo" },
-    { "name": "Inglés", "level": "C1" }
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "C1"
+    }
   ],
   "contact": {
     "email": "guillermo.j.montenegro@gmail.com",

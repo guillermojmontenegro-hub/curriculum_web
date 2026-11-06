@@ -2,17 +2,16 @@ import type { Metadata } from "next";
 import { Inter, Roboto, Space_Grotesk } from "next/font/google";
 import { MotionEffects } from "@/components/motion-effects";
 import "./globals.css";
+import "./portfolio.css";
 
 const themeInitializer = `
 (() => {
   const storageKey = "theme-preference";
   const root = document.documentElement;
-  const storedTheme = window.localStorage.getItem(storageKey);
-  const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches
-    ? "light"
-    : "dark";
+  let storedTheme;
+  try { storedTheme = window.localStorage.getItem(storageKey); } catch {}
   const theme =
-    storedTheme === "light" || storedTheme === "dark" ? storedTheme : systemTheme;
+    storedTheme === "light" || storedTheme === "dark" ? storedTheme : "light";
 
   root.dataset.theme = theme;
   root.style.colorScheme = theme;
@@ -39,11 +38,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Guillermo Montenegro | CV",
+  title: "Guillermo Montenegro | Software, Mobile & AI",
   description:
-    "Perfil profesional y articulos técnicos de Guillermo Montenegro sobre IA aplicada, software y producto.",
+    "Desarrollo de software desde 2010. Android, iOS, web full stack, backend Java y Python, IA aplicada y automatización. Conocé mi trabajo y mi recorrido.",
   openGraph: {
-    title: "Guillermo Montenegro | CV",
+    title: "Guillermo Montenegro | Software, Mobile & AI",
     description:
       "Perfil profesional, experiencia y articulos técnicos escritos por Guillermo Montenegro.",
     type: "website",

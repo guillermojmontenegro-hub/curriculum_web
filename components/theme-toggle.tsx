@@ -32,30 +32,8 @@ export function ThemeToggle({
       return;
     }
 
-    const systemTheme = window.matchMedia("(prefers-color-scheme: light)")
-      .matches
-      ? "light"
-      : "dark";
-
-    applyTheme(systemTheme);
-    setTheme(systemTheme);
-  }, []);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: light)");
-    const syncWithSystem = (event: MediaQueryListEvent) => {
-      if (window.localStorage.getItem(STORAGE_KEY)) {
-        return;
-      }
-
-      const nextTheme: Theme = event.matches ? "light" : "dark";
-      applyTheme(nextTheme);
-      setTheme(nextTheme);
-    };
-
-    mediaQuery.addEventListener("change", syncWithSystem);
-
-    return () => mediaQuery.removeEventListener("change", syncWithSystem);
+    applyTheme("light");
+    setTheme("light");
   }, []);
 
   const nextTheme: Theme = theme === "dark" ? "light" : "dark";
@@ -69,7 +47,9 @@ export function ThemeToggle({
       title={label}
       onClick={() => {
         applyTheme(nextTheme);
-        window.localStorage.setItem(STORAGE_KEY, nextTheme);
+        try {
+          window.localStorage.setItem(STORAGE_KEY, nextTheme);
+        } catch {}
         setTheme(nextTheme);
         onClick?.();
       }}

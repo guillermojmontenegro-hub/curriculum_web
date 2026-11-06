@@ -1,131 +1,70 @@
 "use client";
-
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
-
 import { LanguageToggle } from "@/components/language-toggle";
 import { ThemeToggle } from "@/components/theme-toggle";
-import type { Locale } from "@/lib/i18n";
-import { getDictionary, withLocale } from "@/lib/i18n";
+import { getDictionary, withLocale, type Locale } from "@/lib/i18n";
 
-type SiteHeaderProps = {
-  locale: Locale;
-};
-
-export function SiteHeader({ locale }: SiteHeaderProps) {
+export function SiteHeader({ locale }: { locale: Locale }) {
+  const [open, setOpen] = useState(false);
   const copy = getDictionary(locale);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isProfileExpanded, setIsProfileExpanded] = useState(false);
-  const toggleLabel =
-    locale === "es" ? "Alternar navegación" : "Toggle navigation";
-  const closeSidebar = () => setIsSidebarOpen(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(orientation: portrait)");
-    const syncSidebarState = (event?: MediaQueryListEvent) => {
-      if (!(event?.matches ?? mediaQuery.matches)) {
-        setIsSidebarOpen(false);
-      }
-    };
-
-    syncSidebarState();
-    mediaQuery.addEventListener("change", syncSidebarState);
-
-    return () => mediaQuery.removeEventListener("change", syncSidebarState);
-  }, []);
-
   return (
-    <header
-      className={`site-header ${isSidebarOpen ? "is-portrait-open" : "is-portrait-collapsed"}`}
-    >
-      <button
-        type="button"
-        className="site-header-toggle"
-        aria-label={toggleLabel}
-        aria-expanded={isSidebarOpen}
-        onClick={() => setIsSidebarOpen((current) => !current)}
-      >
-        <span className="site-header-toggle-box" aria-hidden="true">
-          <span className="site-header-toggle-line" />
-          <span className="site-header-toggle-line" />
-          <span className="site-header-toggle-line" />
-        </span>
-      </button>
-
-      <div className="container site-header-inner">
-        <div className="site-header-topbar">
-          <div className="brand-lockup">
-            <button
-              type="button"
-              className={`brand-mark brand-mark-button ${isProfileExpanded ? "is-expanded" : ""}`}
-              aria-label={
-                isProfileExpanded
-                  ? "Reducir foto de perfil"
-                  : "Ampliar foto de perfil"
-              }
-              aria-pressed={isProfileExpanded}
-              onClick={() => setIsProfileExpanded((current) => !current)}
-            >
-              <Image
-                src="/assets/fotoCV-thumb.jpg"
-                alt="Foto de perfil de Guillermo Montenegro"
-                width={160}
-                height={160}
-                className="brand-mark-image"
-                sizes="(max-width: 640px) 56px, 160px"
-                priority
-              />
-            </button>
-            <Link
-              href={withLocale("/", locale)}
-              className="brand-copy"
-              aria-label={locale === "es" ? "Inicio" : "Home"}
-              onClick={closeSidebar}
-            >
-              <strong>Guillermo J. Montenegro</strong>
-              <span>{copy.brandSubtitle}</span>
-            </Link>
-          </div>
-        </div>
-
-        <div className="site-header-actions">
-          <nav className="site-nav">
-            <Link href={withLocale("/#experiencia", locale)} onClick={closeSidebar}>
-              {copy.nav.experience}
-            </Link>
-            <Link href={withLocale("/#skills", locale)} onClick={closeSidebar}>
-              {copy.nav.skills}
-            </Link>
-            <Link href={withLocale("/#contacto", locale)} onClick={closeSidebar}>
-              {copy.nav.contact}
-            </Link>
-            <Link
-              href={withLocale("/articulos", locale)}
-              onClick={closeSidebar}
-            >
-              {copy.nav.articles}
-            </Link>
-            <Link
-              href={withLocale("/consultoria", locale)}
-              className="nav-cta"
-              onClick={closeSidebar}
-            >
-              {copy.nav.consulting}
-            </Link>
+    <header className="editorial-header">
+      <div className="editorial-nav">
+        <Link
+          href={withLocale("/", locale)}
+          className="editorial-brand"
+          onClick={() => setOpen(false)}
+        >
+          <span className="monogram">
+            gm<span>.</span>
+          </span>
+          <span>
+            Guillermo
+            <br />
+            Montenegro
+          </span>
+        </Link>
+        <button
+          className="menu-trigger"
+          type="button"
+          aria-label={
+            locale === "es" ? "Menú de navegación" : "Navigation menu"
+          }
+          aria-expanded={open}
+          aria-controls="main-navigation"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "×" : "☰"}
+        </button>
+        <div
+          id="main-navigation"
+          className={`editorial-links ${open ? "is-open" : ""}`}
+        >
+          <nav aria-label={locale === "es" ? "Principal" : "Main"}>
+            {[
+              ["/#experiencia", copy.nav.experience],
+              ["/#skills", copy.nav.skills],
+              ["/articulos", copy.nav.articles],
+              ["/consultoria", copy.nav.consulting],
+              ["/#contacto", copy.nav.contact],
+            ].map(([href, label]) => (
+              <Link
+                key={href}
+                href={withLocale(href, locale)}
+                onClick={() => setOpen(false)}
+              >
+                {label}
+              </Link>
+            ))}
           </nav>
-
-          <ThemeToggle
-            darkLabel={copy.themeToggleToDark}
-            lightLabel={copy.themeToggleToLight}
-            onClick={closeSidebar}
-          />
-
-          <LanguageToggle
-            locale={locale}
-            label={copy.localeSwitchLabel}
-            onClick={closeSidebar}
-          />
+          <div className="editorial-controls">
+            <ThemeToggle
+              darkLabel={copy.themeToggleToDark}
+              lightLabel={copy.themeToggleToLight}
+            />
+            <LanguageToggle locale={locale} label={copy.localeSwitchLabel} />
+          </div>
         </div>
       </div>
     </header>
